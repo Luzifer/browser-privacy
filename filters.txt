@@ -1,0 +1,45 @@
+! Homepage: https://ahlers.me/
+! Title: Personal Clean-Web
+! Expires: 1 hour
+
+
+! ---- Global filters ----
+
+! On every page block third-party scripts and frames
+*$script,third-party
+*$subdocument,third-party
+
+! Welcome to the EU - Remove CookieConsent
+||cdnjs.cloudflare.com/ajax/libs/cookieconsent2/*$important,script
+
+! Many pages rely on CDNs - allow scripts except of a blocking rule
+@@||cdnjs.cloudflare.com/ajax/libs/*$script
+@@||cdn.jsdelivr.net^$script
+
+! Allow loading fonts from TypeKit
+@@||use.typekit.net^$script
+
+! Allow embedding of YouTube videos
+@@||www.youtube.com/embed/*$subdocument
+
+! Override allowed analytics in EasyPrivacy
+||cdn.segment.com/analytics.js/*$important,script
+
+
+! ---- Application specific filters ----
+
+! APP: pubg.op.gg - https://pubg.op.gg/
+! Scripts hosted on a CDN, required to work at all
+@@||opgg-pubg-static.akamaized.net^$script,domain=pubg.op.gg
+
+! APP: Trello
+! Scripts hosted on a CDN, required to work at all - still blocking newrelic
+@@||trellocdn.com^$script,domain=trello.com
+||trellocdn.com/dist/newrelic*$important,script,domain=trello.com
+
+! APP: YNAB - https://app.youneedabudget.com/
+! Scripts hosted on a CDN, required to work at all
+@@||evergreen-production-youneedabudgetco.netdna-ssl.com^$script,domain=app.youneedabudget.com
+
+
+! vim: set ft=abp:
