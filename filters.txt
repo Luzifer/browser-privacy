@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: ArBg0krL6QNSbqz71tSlqQ
+! Checksum: VZIEtj39yhbSSn0a9F4Kiw
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2018-06-10T12:37:29+00:00
+! TimeUpdated: 2018-06-10T14:07:16+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -31,6 +31,11 @@
 
 
 ! ---- Application specific filters ----
+
+! APP: Amazon Prime Video - https://www.amazon.de/
+! Allow loading sources to enable Prime Video playback
+@@||aiv-cdn.net^$script,domain=www.amazon.de
+@@||ssl-images-amazon.com^$script,domain=www.amazon.de
 
 ! APP: PaS(t)3 - https://paste.luzifer.io/
 ! Site is using Google Login
