@@ -1,5 +1,5 @@
 ! Title: Personal Clean-Web
-! Checksum: sX/sfuIMmEERz3QbO3Y5ZA
+! Checksum: E7mtj8wb20eOhhG24F1CGQ
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
 ! Homepage: https://github.com/Luzifer/browser-privacy
@@ -35,7 +35,7 @@
 ! Scripts hosted on a CDN, required to work at all
 @@||opgg-pubg-static.akamaized.net^$script,domain=pubg.op.gg
 
-! APP: Trello
+! APP: Trello - https://trello.com/
 ! Scripts hosted on a CDN, required to work at all - still blocking newrelic
 @@||trellocdn.com^$script,domain=trello.com
 ||trellocdn.com/dist/newrelic*$important,script,domain=trello.com
