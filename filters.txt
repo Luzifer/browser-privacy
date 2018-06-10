@@ -1,6 +1,9 @@
-! Homepage: https://ahlers.me/
 ! Title: Personal Clean-Web
+! Checksum: sX/sfuIMmEERz3QbO3Y5ZA
+! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
+! Homepage: https://github.com/Luzifer/browser-privacy
+! License: https://unlicense.org/
 
 
 ! ---- Global filters ----
