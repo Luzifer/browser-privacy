@@ -3,16 +3,29 @@ import re
 import codecs
 import hashlib
 import base64
+import datetime
 
-checksumRegexp = re.compile(
-    r'^\s*!\s*checksum[\s\-:]+([\w\+\/=]+).*\n', re.I | re.M)
+import pytz
+
+checksumRegexp = re.compile(r'^! Checksum: ([\w\+\/=]+).*\n', re.M)
+timeUpdRegexp = re.compile(r'^! TimeUpdated: (.*)\n', re.M)
 
 
 def addChecksum(data):
     checksum = calculateChecksum(data)
-    data = re.sub(checksumRegexp, '', data)
-    data = re.sub(r'(\r?\n)', r'\1! Checksum: %s\1' % checksum, data, 1)
+    data = re.sub(checksumRegexp,
+                  r'! Checksum: {}\n'.format(checksum),
+                  data,
+                  1)
     return data
+
+
+def addDate(data):
+    d = datetime.datetime.utcnow().replace(microsecond=0)
+    d_with_timezone = d.replace(tzinfo=pytz.UTC)
+    now = d_with_timezone.isoformat()
+
+    return re.sub(timeUpdRegexp, r'! TimeUpdated: {}\n'.format(now), data)
 
 
 def calculateChecksum(data):
@@ -31,6 +44,9 @@ def normalize(data):
 
 
 if __name__ == '__main__':
-    data = addChecksum(open('filters.txt').read())
+    data = open('filters.txt').read()
+    data = addDate(data)
+    data = addChecksum(data)
+
     with open('filters.txt', 'w') as f:
         f.write(data)
