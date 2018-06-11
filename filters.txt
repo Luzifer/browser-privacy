@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: 9yYipyTLip61N+wduTJfgg
+! Checksum: qwyY2t6P7BxYZGVAcLcfCg
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2018-06-11T08:37:08+00:00
+! TimeUpdated: 2018-06-11T10:36:14+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -17,6 +17,7 @@
 ||cdnjs.cloudflare.com/ajax/libs/cookieconsent2/*$important,script
 
 ! Many pages rely on CDNs - allow scripts except of a blocking rule
+@@||ajax.googleapis.com/ajax/libs/*$script
 @@||cdnjs.cloudflare.com/ajax/libs/*$script
 @@||cdn.jsdelivr.net^$script
 @@||code.jquery.com^$script
@@ -48,6 +49,10 @@
 ! Site is using Google Login
 @@||accounts.google.com^$subdocument,domain=paste.luzifer.io
 @@||apis.google.com^$script,domain=paste.luzifer.io
+
+! APP: PayPal - https://www.paypal.com/
+! Scripts hosted on a CDN, required to work at all
+@@||www.paypalobjects.com^$script,domain=www.paypal.com
 
 ! APP: pubg.op.gg - https://pubg.op.gg/
 ! Scripts hosted on a CDN, required to work at all
