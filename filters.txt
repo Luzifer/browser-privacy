@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: bb67SrucWLHCtK+54Sx1lg
+! Checksum: 9yYipyTLip61N+wduTJfgg
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2018-06-11T08:36:41+00:00
+! TimeUpdated: 2018-06-11T08:37:08+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -19,6 +19,8 @@
 ! Many pages rely on CDNs - allow scripts except of a blocking rule
 @@||cdnjs.cloudflare.com/ajax/libs/*$script
 @@||cdn.jsdelivr.net^$script
+@@||code.jquery.com^$script
+@@||maxcdn.bootstrapcdn.com/bootstrap/*$script
 
 ! Allow loading fonts from TypeKit
 @@||use.typekit.net^$script
