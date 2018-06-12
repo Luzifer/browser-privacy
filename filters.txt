@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: PwpAYNt+mxsjeCssEoaK/w
+! Checksum: 3oShYQ9fHiUjcCItOLyZZw
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2018-06-12T10:49:20+00:00
+! TimeUpdated: 2018-06-12T10:50:48+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -51,7 +51,7 @@
 ! APP: Google ... - https://*.google.com/
 ! Allow Google to load its own assets
 @@||maps.googleapis.com^$script,domain=google.com
-@@||ssl.gstatic.com^$script,domain=accounts.google.com
+@@||ssl.gstatic.com^$script,domain=google.com
 @@||www.gstatic.com^$script,domain=google.com
 
 ! APP: PaS(t)3 - https://paste.luzifer.io/
