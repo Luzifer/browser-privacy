@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: Uiwzx8KX1jSC3gTruy7qiQ
+! Checksum: PwpAYNt+mxsjeCssEoaK/w
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2018-06-11T10:45:52+00:00
+! TimeUpdated: 2018-06-12T10:49:20+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -39,6 +39,14 @@
 ! Allow loading sources to enable Prime Video playback
 @@||aiv-cdn.net^$script,domain=www.amazon.de
 @@||ssl-images-amazon.com^$script,domain=www.amazon.de
+
+! APP: Fonts.com - https://www.fonts.com/
+! Scripts hosted on a CDN, required to work at all
+@@||fast.fonts.net^$script,domain=www.fonts.com
+! The SkyFonts integration is using a script loaded from localhost
+! through a custom hostname and needs to be allowed in order for the
+! SkyFonts application to be able to add fonts through this trigger
+@@||local.skyfonts.com:51001^$script,domain=www.fonts.com
 
 ! APP: Google ... - https://*.google.com/
 ! Allow Google to load its own assets
