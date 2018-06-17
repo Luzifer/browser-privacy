@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: JgVtTDWyxTDNMsAsmKxoaw
+! Checksum: qboywv8117WNLE4htQjPbQ
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2018-06-13T07:52:40+00:00
+! TimeUpdated: 2018-06-17T12:11:07+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -95,6 +95,10 @@
 @@||ton.twimg.com^$script,domain=tweetdeck.twitter.com
 ! Allow playback of videos hosted on Twitter using internal player
 @@||abs.twimg.com/web-video-player/*$script,domain=twitter.com
+
+! APP: Twitter - https://www.twitter.com/
+! Scripts hosted on Twitter CDN, required to work at all
+@@||abs.twimg.com^$script,domain=twitter.com
 
 ! APP: YNAB - https://app.youneedabudget.com/
 ! Scripts hosted on a CDN, required to work at all
