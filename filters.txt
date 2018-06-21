@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: lkkUCC4n5/rX4GzSy+e1oA
+! Checksum: LVoPGFqwCoWq6Speh6O54A
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2018-06-21T10:22:49+00:00
+! TimeUpdated: 2018-06-21T21:33:01+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -54,6 +54,10 @@
 @@||ssl.gstatic.com^$script,domain=google.com
 @@||www.gstatic.com^$script,domain=google.com
 
+! APP: HumbleBundle - https://www.humblebundle.com/
+! Scripts hosted on a CDN, required to work at all
+@@||humblebundle-a.akamaihd.net^$script,domain=www.humblebundle.com
+
 ! APP: LinkedIn - https://www.linkedin.com/
 ! Scripts hosted on a CDN, required to work at all
 @@||static.licdn.com^$script,domain=www.linkedin.com
@@ -75,6 +79,10 @@
 ! APP: pubg.op.gg - https://pubg.op.gg/
 ! Scripts hosted on a CDN, required to work at all
 @@||opgg-pubg-static.akamaized.net^$script,domain=pubg.op.gg
+
+! APP: Sipgate Team - https://app.sipgate.com/
+@@||secure.live.sipgate.de^$subdocument,domain=app.sipgate.com
+@@||fast.fonts.net^$script,domain=app.sipgate.com
 
 ! APP: Slack - https://*.slack.com/
 ! Scripts hosted on a CDN, required to work at all
