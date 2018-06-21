@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: Lb1cmVlLh0ei3dzlOB00Cg
+! Checksum: lkkUCC4n5/rX4GzSy+e1oA
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2018-06-20T22:05:32+00:00
+! TimeUpdated: 2018-06-21T10:22:49+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -79,6 +79,10 @@
 ! APP: Slack - https://*.slack.com/
 ! Scripts hosted on a CDN, required to work at all
 @@||a.slack-edge.com^$script,domain=slack.com
+
+! APP: Soundcloud - https://soundcloud.com/
+! Scripts hosted on a CDN, required to work at all
+@@||sndcdn.com^$script,domain=soundcloud.com
 
 ! APP: ToDoist - https://todoist.com/
 ! Scripts hosted on a CDN, required to work at all
