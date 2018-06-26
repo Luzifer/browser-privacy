@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: dK4cTuw0ajt0nh/g0RxpJg
+! Checksum: a2k6cImXv6FEX1V2NPZ8zA
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2018-06-25T13:27:06+00:00
+! TimeUpdated: 2018-06-26T11:22:55+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -22,6 +22,9 @@
 @@||cdn.jsdelivr.net^$script
 @@||code.jquery.com^$script
 @@||maxcdn.bootstrapcdn.com/bootstrap/*$script
+
+! All Jimdo websites are using their CDN and are too many to unblock each of them
+@@||assets.jimstatic.com^$script
 
 ! Allow loading fonts from TypeKit
 @@||use.typekit.net^$script
