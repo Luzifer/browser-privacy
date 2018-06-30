@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: P8xGqFYvXN4Xnecno3nREA
+! Checksum: sSgJ4jJ1uewldZIoeop5/w
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2018-06-30T11:17:34+00:00
+! TimeUpdated: 2018-06-30T11:19:39+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -44,7 +44,6 @@
 @@||ssl-images-amazon.com^$script,domain=www.amazon.de
 
 ! APP: Fonts.com - https://www.fonts.com/
-! Scripts hosted on a CDN, required to work at all
 @@||fast.fonts.net^$script,domain=www.fonts.com
 ! The SkyFonts integration is using a script loaded from localhost
 ! through a custom hostname and needs to be allowed in order for the
@@ -58,11 +57,9 @@
 @@||www.gstatic.com^$script,domain=google.com
 
 ! APP: HumbleBundle - https://www.humblebundle.com/
-! Scripts hosted on a CDN, required to work at all
 @@||humblebundle-a.akamaihd.net^$script,domain=www.humblebundle.com
 
 ! APP: LinkedIn - https://www.linkedin.com/
-! Scripts hosted on a CDN, required to work at all
 @@||static.licdn.com^$script,domain=www.linkedin.com
 
 ! APP: Mailgun - https://app.mailgun.com/
@@ -79,11 +76,9 @@
 @@||apis.google.com^$script,domain=paste.luzifer.io
 
 ! APP: PayPal - https://www.paypal.com/
-! Scripts hosted on a CDN, required to work at all
 @@||www.paypalobjects.com^$script,domain=www.paypal.com
 
 ! APP: pubg.op.gg - https://pubg.op.gg/
-! Scripts hosted on a CDN, required to work at all
 @@||opgg-pubg-static.akamaized.net^$script,domain=pubg.op.gg
 
 ! APP: Sipgate Team - https://app.sipgate.com/
@@ -91,48 +86,37 @@
 @@||fast.fonts.net^$script,domain=app.sipgate.com
 
 ! APP: Slack - https://*.slack.com/
-! Scripts hosted on a CDN, required to work at all
 @@||slack-edge.com^$script,domain=slack.com
 
 ! APP: Soundcloud - https://soundcloud.com/
-! Scripts hosted on a CDN, required to work at all
 @@||sndcdn.com^$script,domain=soundcloud.com
 
 ! APP: Steam - https://store.steampowered.com/
-! Scripts hosted on a CDN, required to work at all
 @@||steamstore-a.akamaihd.net^$script,domain=store.steampowered.com
 
 ! APP: ToDoist - https://todoist.com/
-! Scripts hosted on a CDN, required to work at all
 @@||d3ptyyxy2at9ui.cloudfront.net^$script,domain=todoist.com
 
 ! APP: Trello - https://trello.com/
-! Scripts hosted on a CDN, required to work at all - still blocking newrelic
 @@||trello-attachments.s3.amazonaws.com^$subdocument,domain=trello.com
 ||trellocdn.com/dist/newrelic*$important,script,domain=trello.com
 @@||trellocdn.com^$script,domain=trello.com
 
 ! APP: TweetDeck - https://tweetdeck.twitter.com/
-! Scripts hosted on Twitter CDN, required to work at all - still blocking GA
+! Ensure GA block stays in place after whitelisting ton.twimg.com
 ||ton.twimg.com/tweetdeck-web/web/scripts/google_analytics.*$important,script,domain=tweetdeck.twitter.com
 @@||ton.twimg.com^$script,domain=tweetdeck.twitter.com
-! Allow playback of videos hosted on Twitter using internal player
-@@||abs.twimg.com/web-video-player/*$script,domain=twitter.com
 
 ! APP: Twitch - https://www.twitch.tv/
-! Scripts hosted on Twitter CDN, required to work at all
 @@||static.twitchcdn.net^$script,domain=www.twitch.tv
 
 ! APP: Twitter - https://www.twitter.com/
-! Scripts hosted on Twitter CDN, required to work at all
 @@||abs.twimg.com^$script,domain=twitter.com
 
 ! APP: YNAB - https://app.youneedabudget.com/
-! Scripts hosted on a CDN, required to work at all
 @@||evergreen-production-youneedabudgetco.netdna-ssl.com^$script,domain=app.youneedabudget.com
 
 ! APP: YouTube - https://www.youtube.com/
-! Scripts hosted on a CDN, required to work at all
 @@||s.ytimg.com^$script,domain=www.youtube.com
 
 
