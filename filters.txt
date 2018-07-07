@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: Rl0to0AEo1HyDITMltXXPw
+! Checksum: yTU7sM2KjyB+WwBM+Qopyw
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2018-07-07T09:36:28+00:00
+! TimeUpdated: 2018-07-07T09:38:16+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -112,6 +112,11 @@
 
 ! APP: Twitter - https://www.twitter.com/
 @@||abs.twimg.com^$script,domain=twitter.com
+
+! APP: Vimeo - https://vimeo.com/
+! Ensure previous existing block is not overwritten by whitelisting vimeocdn
+||f.vimeocdn.com/js_opt/ablincoln_combined.min.js$script,important
+@@||vimeocdn.com^$script,domain=vimeo.com
 
 ! APP: YNAB - https://app.youneedabudget.com/
 @@||evergreen-production-youneedabudgetco.netdna-ssl.com^$script,domain=app.youneedabudget.com
