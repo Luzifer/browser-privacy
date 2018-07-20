@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: LvxYc1TDg0oj96Ryel6bwQ
+! Checksum: TX0w66Phtwf7EfZMssk31w
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2018-07-18T18:09:01+00:00
+! TimeUpdated: 2018-07-20T14:41:35+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -47,6 +47,10 @@
 
 ! APP: BitBucket - https://bitbucket.org/
 @@||d301sr5gafysq2.cloudfront.net^$script,domain=bitbucket.org
+
+! APP: DeutschePost - https://deutschepost.de/
+@@||www.bing.com$script,domain=deutschepost.de
+@@||tiles.virtualearth.net^$script,domain=deutschepost.de
 
 ! APP: DigitalOcean - https://cloud.digitalocean.com/
 @@||cloud-cdn-digitalocean-com.global.ssl.fastly.net^$script,domain=cloud.digitalocean.com
