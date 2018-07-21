@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: TX0w66Phtwf7EfZMssk31w
+! Checksum: 5t9TecKZMdwBXzy8MI2OXQ
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2018-07-20T14:41:35+00:00
+! TimeUpdated: 2018-07-21T17:36:32+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -62,6 +62,9 @@
 ! through a custom hostname and needs to be allowed in order for the
 ! SkyFonts application to be able to add fonts through this trigger
 @@||local.skyfonts.com:51001^$script,domain=www.fonts.com
+
+! APP: Foursquare - https://foursquare.com/
+@@||4sqi.net^$script,domain=foursquare.com
 
 ! APP: Google ... - https://*.google.com/
 ! Allow Google to load its own assets
