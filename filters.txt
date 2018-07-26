@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: PFEI9JYoCaJ0tvdGyCd7vA
+! Checksum: LUi9sBYPOyOLlJxudlQCJw
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2018-07-26T08:21:50+00:00
+! TimeUpdated: 2018-07-26T08:24:16+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -38,6 +38,9 @@
 
 ! ---- Application specific filters ----
 
+! APP: Aliexpress - https://www.aliexpress.com/
+@@||alicdn.com^$script,domain=www.aliexpress.com
+
 ! APP: Amazon - https://www.amazon.de/
 @@||aiv-cdn.net^$script,domain=amazon.de
 @@||ssl-images-amazon.com^$script,domain=amazon.de
@@ -65,6 +68,9 @@
 
 ! APP: Foursquare - https://foursquare.com/
 @@||4sqi.net^$script,domain=foursquare.com
+
+! APP: GitLab - https://gitlab.com/
+@@||assets.gitlab-static.net^$script,domain=gitlab.com
 
 ! APP: Google ... - https://*.google.com/
 ! Allow Google to load its own assets
