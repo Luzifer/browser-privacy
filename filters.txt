@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: LUi9sBYPOyOLlJxudlQCJw
+! Checksum: 6sc2KXtup1oahQHqKAX0pg
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2018-07-26T08:24:16+00:00
+! TimeUpdated: 2018-07-27T19:30:57+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -59,6 +59,9 @@
 @@||cloud-cdn-digitalocean-com.global.ssl.fastly.net^$script,domain=cloud.digitalocean.com
 @@||js.stripe.com^$script,domain=cloud.digitalocean.com
 
+! APP: Dropbox - https://www.dropbox.com/
+@@||dropboxstatic.com^$script,domain=www.dropbox.com
+
 ! APP: Fonts.com - https://www.fonts.com/
 @@||fast.fonts.net^$script,domain=www.fonts.com
 ! The SkyFonts integration is using a script loaded from localhost
@@ -77,6 +80,7 @@
 @@||maps.googleapis.com^$script,domain=google.com
 @@||ssl.gstatic.com^$script,domain=google.com
 @@||www.gstatic.com^$script,domain=google.com
+@@||www.dropbox.com/chooser$subdocument,domain=mail.google.com
 
 ! APP: HumbleBundle - https://www.humblebundle.com/
 @@||humblebundle-a.akamaihd.net^$script,domain=www.humblebundle.com
