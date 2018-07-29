@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: 6sc2KXtup1oahQHqKAX0pg
+! Checksum: snmC11fftSzuUhK9ooLVAw
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2018-07-27T19:30:57+00:00
+! TimeUpdated: 2018-07-29T20:30:18+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -158,6 +158,8 @@
 
 ! APP: YouTube - https://www.youtube.com/
 @@||s.ytimg.com^$script,domain=www.youtube.com
+@@||consent.google.com^$subdocument,domain=www.youtube.com
+@@||www.gstatic.com^$script,domain=consent.youtube.com
 
 
 ! vim: set ft=abp:
