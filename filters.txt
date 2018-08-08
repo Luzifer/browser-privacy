@@ -106,9 +106,9 @@
 @@||static.licdn.com^$script,domain=www.linkedin.com
 
 ! APP: Mailgun - https://app.mailgun.com/
-@@||js.stripe.com^$domain=app.mailgun.com
+@@||js.stripe.com^$domain=mailgun.com
 @@||m.stripe.network^$subdocument,domain=js.stripe.com
-@@||static.zdassets.com$script,domain=app.mailgun.com
+@@||static.zdassets.com$script,domain=mailgun.com
 
 ! APP: Netlify - https://(app|www).netlify.com/
 @@||cdn.netlify.com^$script,domain=netlify.com
