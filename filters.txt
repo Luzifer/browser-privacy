@@ -149,6 +149,7 @@
 @@||trellocdn.com^$script,domain=trello.com
 
 ! APP: Twitch - https://www.twitch.tv/
+@@||passport-cdn.ttvnw.net^$script,domain=passport.twitch.tv
 @@||static.twitchcdn.net^$script,domain=twitch.tv
 @@||web.twitchapp.net^$script,domain=app.twitch.tv
 
