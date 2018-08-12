@@ -83,6 +83,7 @@
 @@||apis-explorer.appspot.com^$script,domain=cloud.google.com
 @@||apis.google.com^$script,domain=content.googleapis.com
 @@||content.googleapis.com/static/proxy.html$subdocument,domain=explorer.apis.google.com
+@@||mail-attachment.googleusercontent.com/attachment/*$subdocument,domain=mail.google.com
 @@||maps.googleapis.com^$script,domain=google.com
 @@||ssl.gstatic.com^$script,domain=google.com
 @@||www.dropbox.com/chooser$subdocument,domain=mail.google.com
