@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: 5ZEkasKu8X/J1rfM9TCnVA
+! Checksum: O81JyQbgBYdOkuq8y7gQlw
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2018-10-03T14:05:02+00:00
+! TimeUpdated: 2018-10-03T14:11:25+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -50,6 +50,15 @@
 
 ! APP: Apple Store - https://www.apple.com/
 @@||store.storeimages.cdn-apple.com^$script,domain=www.apple.com
+
+! APP: Atlassian - Jira Cloud, Atlassian ID, ... - https://*.atlassian.(com|net)/
+@@||atlassian.com^$script,domain=atlassian.net
+@@||atlassian.io^$subdocument,domain=atlassian.com
+@@||atlassian.net^$subdocument,domain=atlassian.com
+@@||atl-paas.net^$script,domain=atlassian.com
+@@||atl-paas.net^$script,domain=atlassian.net
+@@||d3svb88ihmtf6u.cloudfront.net^$script,domain=atlassian.net
+@@||jira.com^$subdocument,domain=atlassian.com
 
 ! APP: BitBucket - https://bitbucket.org/
 @@||d301sr5gafysq2.cloudfront.net^$script,domain=bitbucket.org
