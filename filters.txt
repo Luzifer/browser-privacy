@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: O81JyQbgBYdOkuq8y7gQlw
+! Checksum: zPxF6/tIiSioyVxUq+XO0A
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2018-10-03T14:11:25+00:00
+! TimeUpdated: 2018-10-04T10:21:51+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -152,6 +152,12 @@
 
 ! APP: Soundcloud - https://soundcloud.com/
 @@||sndcdn.com^$script,domain=soundcloud.com
+
+! APP: Spotify - https://www.spotify.com/
+@@||scdn.co^$script,domain=spotify.com
+||scdn.co/webpack/gabo-event-tracker.*.js$script,domain=spotify.com,important
+||scdn.co/webpack/sp-analytics.*.js$script,domain=spotify.com,important
+||scdn.co/webpack/tracking.download.*.js$script,domain=spotify.com,important
 
 ! APP: StackOverflow - https://stackoverflow.com/
 @@||cdn.sstatic.net^$script,domain=stackoverflow.com
