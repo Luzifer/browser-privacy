@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: zPxF6/tIiSioyVxUq+XO0A
+! Checksum: WRwXNIPxq3b/KYRJ2lRElg
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2018-10-04T10:21:51+00:00
+! TimeUpdated: 2018-11-10T15:30:49+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -139,6 +139,10 @@
 
 ! APP: pubg.op.gg - https://pubg.op.gg/
 @@||opgg-pubg-static.akamaized.net^$script,domain=pubg.op.gg
+
+! APP: Reddit - https://www.reddit.com/
+@@||www.redditstatic.com^$script,domain=www.reddit.com
+||www.redditstatic.com/*/js/ads.js$script,domain=www.reddit.com,important
 
 ! APP: Redsmin - https://www.redsmin.com/
 @@||d33wubrfki0l68.cloudfront.net^$script,domain=www.redsmin.com
