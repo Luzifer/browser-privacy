@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: ia0fkukLMBPArKQpOVcSIQ
+! Checksum: f7e1BReSF03xpL+rdRECCA
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2018-11-22T09:50:38+00:00
+! TimeUpdated: 2018-12-12T11:37:23+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -173,7 +173,9 @@
 ! APP: StackOverflow - https://stackoverflow.com/
 @@||cdn.sstatic.net^$script,domain=stackoverflow.com
 
-! APP: Steam - https://store.steampowered.com/
+! APP: Steam - https://store.steampowered.com/ / https://steamcommunity.com/
+@@||steamcommunity-a.akamaihd.net^$script,domain=steamcommunity.com
+@@||steampowered.com/login/transfer$subdocument,domain=steamcommunity.com
 @@||steamstore-a.akamaihd.net^$script,domain=store.steampowered.com
 @@||www.paypal.com^$subdocument,domain=store.steampowered.com
 
