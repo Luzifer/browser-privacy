@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: cvtfGlnxqsVqZcTSZ2qdfQ
+! Checksum: 2Wjmhmjb9cJMlO29M53Zog
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2018-12-21T12:41:40+00:00
+! TimeUpdated: 2019-02-03T15:14:28+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -77,6 +77,10 @@
 
 ! APP: Docker-Hub - https://hub.docker.com/ | https://cloud.docker.com/
 @@||d36jcksde1wxzq.cloudfront.net^$script,domain=docker.com
+
+! APP: Dominos - https://dominos.de/
+@@||adyen.com^$subdocument,domain=bestellen.dominos.de
+@@||adyen.com^$script,domain=bestellen.dominos.de
 
 ! APP: Doodle - https://doodle.com/
 @@||cdn.polyfill.io/v2/*$script,domain=doodle.com
