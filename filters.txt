@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: GTsDSCm36sFq5oduFmc82g
+! Checksum: RTi2DCz3duwK8cenPgXLvg
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2019-04-29T07:37:01+00:00
+! TimeUpdated: 2019-07-24T22:01:30+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -66,6 +66,10 @@
 
 ! APP: BitLy - https://app.bitly.com/
 @@||d1ayxb9ooonjts.cloudfront.net^$script,domain=app.bitly.com
+
+! APP: Caya - https://usecaya.com/
+@@||api.xs2a.com^$script,domain=usecaya.com
+@@||js.chargebee.com^$script,domain=usecaya.com
 
 ! APP: DeutschePost - https://deutschepost.de/
 @@||www.bing.com$script,domain=deutschepost.de
