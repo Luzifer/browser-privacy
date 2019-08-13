@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: VEbR/8LJUQ9UNNIjBkQqnQ
+! Checksum: c5cTM/OjaIF5/qQXNlsqgA
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2019-07-24T22:02:23+00:00
+! TimeUpdated: 2019-08-13T08:45:59+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -41,6 +41,9 @@
 
 
 ! ---- Application specific filters ----
+
+! APP: Absence - https://app.absence.io/
+@@||js.stripe.com/v2/*$domain=app.absence.io
 
 ! APP: Aliexpress - https://www.aliexpress.com/
 @@||alicdn.com^$script,domain=www.aliexpress.com
