@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: c5cTM/OjaIF5/qQXNlsqgA
+! Checksum: FVqiSn/e79cvHUYPqg4OvA
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2019-08-13T08:45:59+00:00
+! TimeUpdated: 2019-09-07T19:59:28+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -175,6 +175,9 @@
 
 ! APP: Redsmin - https://www.redsmin.com/
 @@||d33wubrfki0l68.cloudfront.net^$script,domain=www.redsmin.com
+
+! APP: Runescape - https://*.runescape.com/
+@@||www.google.com/uds/api/visualization/*$script,domain=services.runescape.com
 
 ! APP: Sipgate Team - https://app.sipgate.com/
 @@||secure.live.sipgate.de^$subdocument,domain=app.sipgate.com
