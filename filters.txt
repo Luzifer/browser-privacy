@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: FVqiSn/e79cvHUYPqg4OvA
+! Checksum: jHz+WfSKV3kSCVIyvEihkg
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2019-09-07T19:59:28+00:00
+! TimeUpdated: 2019-10-06T12:08:47+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -239,6 +239,12 @@
 @@||s.ytimg.com^$script,domain=www.youtube.com
 @@||consent.google.com^$subdocument,domain=www.youtube.com
 @@||www.gstatic.com^$script,domain=consent.youtube.com
+
+! ---- Fully trash the bad stuff ----
+! Site: Replug.io - Monetize foreign websites by putting them into an iFrame
+! Action: Prevent loading all assets, combine with an user-script to free the original link
+! User-Script: https://gist.github.com/Luzifer/63830aaa8fcc4b710916afc4ab4ba535
+||$domain=rplg.co,important
 
 
 ! vim: set ft=abp:
