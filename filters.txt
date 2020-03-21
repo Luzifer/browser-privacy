@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: AT+idnpeiLtvXzWMXWO8gg
+! Checksum: vBRdaMwmetpJMZBhI3ZsBA
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2020-03-21T11:30:01+00:00
+! TimeUpdated: 2020-03-21T11:36:15+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -160,6 +160,9 @@
 @@||www.paypal.com^$script,domain=www.paypal.me
 @@||www.paypalobjects.com^$script,domain=www.paypal.com
 @@||www.paypalobjects.com^$script,domain=www.paypal.me
+
+! APP: ProtonDB - https://www.protondb.com/
+@@||spcr.netlify.com^$script,domain=www.protondb.com
 
 ! APP: pubg.op.gg - https://pubg.op.gg/
 @@||opgg-pubg-static.akamaized.net^$script,domain=pubg.op.gg
