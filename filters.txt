@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: j5hXBSLtUolh+DNgG0Hxrw
+! Checksum: I2kLzxWM4PPPk1/n+ZSvxA
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2020-03-21T11:40:06+00:00
+! TimeUpdated: 2020-04-19T12:57:50+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -206,6 +206,9 @@
 @@||steampowered.com/login/transfer$subdocument,domain=steamcommunity.com
 @@||steamstore-a.akamaihd.net^$script,domain=store.steampowered.com
 @@||www.paypal.com^$subdocument,domain=store.steampowered.com
+
+! APP: Thingiverse - https://www.thingiverse.com
+@@||makerbot.map.fastly.net^$script,domain=www.thingiverse.com
 
 ! APP: ToDoist - https://todoist.com/
 @@||d3ptyyxy2at9ui.cloudfront.net^$script,domain=todoist.com
