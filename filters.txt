@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: 7VriDdb62jJqmo8rqdR4Ng
+! Checksum: d5vk8M3faa5bGQHSZKrGww
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2020-05-20T12:50:12+00:00
+! TimeUpdated: 2020-05-24T11:11:48+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -41,6 +41,9 @@
 
 
 ! ---- Application specific filters ----
+
+! APP: 17track - https://17track.net
+@@||cdn.17track.net.cdn.cloudflare.net^$script,domain=t.17track.net
 
 ! APP: Absence - https://app.absence.io/
 @@||js.stripe.com/v2/*$domain=app.absence.io
