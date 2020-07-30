@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: dXf8mPnsOMMruC+z/mQBng
+! Checksum: U3X2Sm+qHwlfQW7gSUTgjg
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2020-07-29T00:02:53+00:00
+! TimeUpdated: 2020-07-30T07:57:40+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -49,11 +49,14 @@
 @@||js.stripe.com/v2/*$domain=app.absence.io
 
 ! APP: Aliexpress - https://www.aliexpress.com/
-@@||assets.alicdn.com/g/ae-fe/*$script,domain=aliexpress.com
-@@||assets.alicdn.com/g/ae/global-base/*$script,domain=aliexpress.com
-||assets.alicdn.com/g/alilog/*$script,domain=aliexpress.com
-@@||i.alicdn.com/ae-feedback-ui/*$script,domain=aliexpress.com
-@@||i.alicdn.com/ae-global/*$script,domain=aliexpress.com
+@@||alicdn.com/ae-feedback-ui/*$script,domain=aliexpress.com
+@@||alicdn.com/ae-global/*$script,domain=aliexpress.com
+@@||alicdn.com/ae-message-ui/*$script,domain=aliexpress.com
+@@||alicdn.com/cn/ae-physical-detail/*$script,domain=aliexpress.com
+@@||alicdn.com/g/ae-fe/*$script,domain=aliexpress.com
+@@||alicdn.com/g/ae/global-base/*$script,domain=aliexpress.com
+||alicdn.com/g/alilog/*$script,domain=aliexpress.com
+@@||alicdn.com/lzd-components/im-ae-buyer/*$script,domain=aliexpress.com
 
 ! APP: Amazon - https://www.amazon.de/
 @@||aiv-cdn.net^$script,domain=amazon.de
