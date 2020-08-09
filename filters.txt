@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: pWXmXJIEaeInbp6Kgq/Z/Q
+! Checksum: VzTfytsjz+5iQUJmfkp8wA
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2020-08-09T20:27:13+00:00
+! TimeUpdated: 2020-08-09T20:28:16+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -110,6 +110,9 @@
 
 ! APP: Dropbox - https://www.dropbox.com/
 @@||dropboxstatic.com^$script,domain=www.dropbox.com
+
+! APP: Etsy - https://www.etsy.com/
+@@||site.etsystatic.com/ac/primary/*$script,domain=www.etsy.com
 
 ! APP: Fonts.com - https://www.fonts.com/
 @@||fast.fonts.net^$script,domain=www.fonts.com
