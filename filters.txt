@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: RKdvuNwH88pW+FwOBpec2g
+! Checksum: 9EJAAdm6DD7OCVayj8pY1A
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2020-11-26T10:29:31+00:00
+! TimeUpdated: 2020-11-26T10:30:37+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -291,6 +291,9 @@
 ! Ensure previous existing block is not overwritten by whitelisting vimeocdn
 ||f.vimeocdn.com/js_opt/ablincoln_combined.min.js$script,important
 @@||vimeocdn.com^$script,domain=vimeo.com
+
+! APP: Warnung.bund.de - https://warnung.bund.de/
+@@||maps.googleapis.com^$script,domain=warnung.bund.de
 
 ! APP: WhatsApp - https://web.whasapp.com/
 @@||mmx-ds.cdn.whatsapp.net^$script,domain=web.whatsapp.com
