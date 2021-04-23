@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: tDiWDZiCAmLJq1HwG2yd4g
+! Checksum: bTef5plFvbMOVifD4eQ8XQ
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2020-11-26T10:32:55+00:00
+! TimeUpdated: 2021-04-23T13:04:40+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -285,6 +285,7 @@
 @@||passport-cdn.ttvnw.net^$script,domain=passport.twitch.tv
 @@||static.twitchcdn.net^$script,domain=twitch.tv
 @@||supervisor.ext-twitch.tv/supervisor/v1/index.html$subdocument,domain=twitch.tv
+@@||ui2.tipalti.com/PayeeDashboard/*$subdocument,domain=dashboard.twitch.tv
 @@||web.twitchapp.net^$script,domain=app.twitch.tv
 
 ! APP: Twitter (page & TweetDeck) - https://*.twitter.com/
