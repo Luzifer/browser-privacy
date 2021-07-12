@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: hjBc+NkaXXkrfTaiNRKGMg
+! Checksum: EjPXgvCiC3dSO2kO/y5Z4w
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2021-07-12T12:38:45+00:00
+! TimeUpdated: 2021-07-12T12:39:30+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -33,6 +33,10 @@
 ! Allow embedding of Vimeo and YouTube videos
 @@||player.vimeo.com/video/*$subdocument
 @@||www.youtube.com/embed/*$subdocument
+
+! Allow PayPal buttons everywhere
+@@||www.paypal.com/sdk/js$script
+@@||www.paypal.com/smart/buttons$subdocument
 
 ! Override allowed analytics in EasyPrivacy
 ||cdn.segment.com/analytics.js/*$important,script
