@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: f4wXMqwrcXTzn4ORaTtHQQ
+! Checksum: OWLXTSqfwIm7dD1iNvSTjg
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2021-12-11T17:04:26+00:00
+! TimeUpdated: 2021-12-11T17:05:00+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -190,6 +190,7 @@
 @@||checkout.stripe.com^$script,domain=ko-fi.com
 @@||checkout.stripe.com^$subdocument,domain=ko-fi.com
 @@||www.gstatic.com/firebasejs/*$script,domain=ko-fi.com
+@@||www.paypal.com/smart/button$subdocument,domain=ko-fi.com
 
 ! APP: Lieferando - https://www.lieferando.de
 @@||assets.takeaway.com/consumer-web/app/3/_next/static/*$script,domain=www.lieferando.de
