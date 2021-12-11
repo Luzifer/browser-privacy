@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: PR672pw7IK54T6XD4IG+dA
+! Checksum: f4wXMqwrcXTzn4ORaTtHQQ
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2021-12-11T17:03:09+00:00
+! TimeUpdated: 2021-12-11T17:04:26+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -136,6 +136,11 @@
 
 ! APP: Foursquare - https://foursquare.com/
 @@||4sqi.net^$script,domain=foursquare.com
+
+! APP: Gheed - https://gheed.com
+@@||embed.twitch.tv/embed/*$script,domain=gheed.com
+@@||platform.twitter.com/widgets.js$script,domain=gheed.com
+@@||www.youtube.com/player_api$script,domain=gheed.com
 
 ! APP: GitLab - https://gitlab.com/
 @@||assets.gitlab-static.net^$script,domain=gitlab.com
