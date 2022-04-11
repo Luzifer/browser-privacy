@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: qdrfUyt+VqAmWk1Hj17D0w
+! Checksum: +znP81Xc2vmxOpFcSDTPLg
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2022-04-11T11:17:23+00:00
+! TimeUpdated: 2022-04-11T11:18:33+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -273,6 +273,9 @@
 @@||d28n7yywqog3r7.cloudfront.net^$subdocument,domain=soundcloud.com
 @@||secure.soundcloud.com^$subdocument,domain=soundcloud.com
 @@||sndcdn.com^$script,domain=soundcloud.com
+
+! APP: Ookla Speedtest - https://www.speedtest.net/
+@@||b.cdnst.net/javascript/speedtest-main.js$script,domain=www.speedtest.net
 
 ! APP: Spotify - https://www.spotify.com/
 @@||scdn.co^$script,domain=spotify.com
