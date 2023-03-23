@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: cIrS7K1Cy19aPtP3bI3enQ
+! Checksum: 6hsb7gYtU/LlLvH0BXqACg
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2023-03-23T11:51:56+00:00
+! TimeUpdated: 2023-03-23T11:52:38+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -211,6 +211,7 @@
 @@||maps.googleapis.com/maps/api/*$script,domain=lieferando.de
 
 ! APP: LinkedIn - https://www.linkedin.com/
+@@||media.licdn.com/embeds/native-document.html$subdocument,domain=linkedin.com
 @@||static*.licdn.com^$script,domain=www.linkedin.com
 
 ! APP: Mailgun - https://app.mailgun.com/
