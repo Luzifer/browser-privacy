@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: NWcKA2bnSwsAKrCKtCXuzg
+! Checksum: cIrS7K1Cy19aPtP3bI3enQ
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2023-03-23T11:51:06+00:00
+! TimeUpdated: 2023-03-23T11:51:56+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -309,6 +309,17 @@
 @@||store.akamai.steamstatic.com/public/*$script,domain=store.steampowered.com
 @@||store.cloudflare.steamstatic.com/public/*$script,domain=store.steampowered.com
 @@||www.paypal.com^$subdocument,domain=store.steampowered.com
+
+! APP: StreamerMerch - https://www.streamermerch.de
+@@||cdn.ravenjs.com^$script,domain=wixapps.net
+@@||ecom.wixapps.net/storefront/cartwidgetPopup$subdocument,domain=streamermerch.de
+@@||static.parastorage.com/services/*$script,domain=streamermerch.de
+@@||static.parastorage.com/services/*$script,domain=wixapps.net
+||static.parastorage.com/services/wix-perf-measure/*$script,domain=streamermerch.de,important
+@@||static.parastorage.com/services/wix-thunderbolt/*$script,domain=streamermerch.de
+@@||static.parastorage.com/unpkg/*$script,domain=streamermerch.de
+@@||static.parastorage.com/unpkg/*$script,domain=wixapps.net
+@@||static.parastorage.com/unpkg/lodash@4.17.21/*$script,domain=streamermerch.de
 
 ! APP: TheThingsNetwork - https://www.thethingsnetwork.org/
 @@||maps.googleapis.com/maps*$script,domain=console.thethingsnetwork.org
