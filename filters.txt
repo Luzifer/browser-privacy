@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: 6hsb7gYtU/LlLvH0BXqACg
+! Checksum: moC9V3uoZde2wjqbXsax9Q
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2023-03-23T11:52:38+00:00
+! TimeUpdated: 2023-03-23T11:53:21+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -195,6 +195,9 @@
 ! APP: INWX - https://www.inwx.de/
 @@||static.inwx.com^$script,domain=www.inwx.de
 @@||static-new.inwx.com/js/*$script,domain=www.inwx.de
+
+! APP: KeyMailer - https://www.keymailer.co
+@@||www.gstatic.com/charts/*$script,domain=keymailer.co
 
 ! APP: KnowYourMeme - https://knowyourmeme.com
 @@||s.kym-cdn.com/assets/*$script,domain=knowyourmeme.com
