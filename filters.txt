@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: qevEeHGZDS/m7gEQVstyEw
+! Checksum: NpbU1GCvbVp3L86FIiuiqg
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2023-03-23T11:54:47+00:00
+! TimeUpdated: 2023-04-16T14:51:24+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -375,10 +375,8 @@
 ! APP: WhatsApp - https://web.whasapp.com/
 @@||mmx-ds.cdn.whatsapp.net^$script,domain=web.whatsapp.com
 
-! APP: YNAB - https://app.youneedabudget.com/
-@@||d2jw9i16ku5n5z.cloudfront.net^$script,domain=app.youneedabudget.com
-@@||evergreen-production-youneedabudgetco.netdna-ssl.com^$script,domain=app.youneedabudget.com
-@@||ynab-evergreen-assets.youneedabudget.com^$script,domain=app.youneedabudget.com
+! APP: YNAB - https://app.ynab.com/
+@@||ynab-evergreen-assets.youneedabudget.com/ynab-api-production/*$script,domain=app.ynab.com
 
 ! APP: YouTube - https://www.youtube.com/
 @@||consent.google.com^$subdocument,domain=www.youtube.com
