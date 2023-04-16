@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: EYQ6iy+uaCtGRHWYXRTQ0g
+! Checksum: avTR+cFvtHcqvRWafgS32g
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2023-04-16T14:52:05+00:00
+! TimeUpdated: 2023-04-16T14:53:41+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -180,7 +180,9 @@
 @@||humblebundle-a.akamaihd.net^$script,domain=www.humblebundle.com
 
 ! APP: IMDB - https://www.imdb.com/
-@@||d1zcggttmijv1z.cloudfront.net/_next/static/*$script,domain=www.imdb.com
+@@||db187550c7dkf.cloudfront.net/jwplayer-unlimited-8.25.6/*$script,domain=www.imdb.com
+@@||dqpnq362acqdi.cloudfront.net/_next/static/*$script,domain=www.imdb.com
+@@||dqpnq362acqdi.cloudfront.net/_next/static/chunks/*$script,domain=www.imdb.com
 
 ! APP: Imgur - https://imgur.com
 @@||js.media-lab.ai^$script,domain=imgur.com
