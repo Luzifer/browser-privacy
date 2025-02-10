@@ -1,3 +1,4 @@
+[uBlock Origin]
 ! Title: Personal Clean-Web
 ! Checksum: bP195MwbjdPvYy0HNQNQbA
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
