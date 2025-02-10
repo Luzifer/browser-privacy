@@ -1,8 +1,8 @@
 ! Title: Personal Clean-Web
-! Checksum: avTR+cFvtHcqvRWafgS32g
+! Checksum: bP195MwbjdPvYy0HNQNQbA
 ! Description: List of filter rules for uBlock Origin to enhance the browsing privacy and replace Ghostery
 ! Expires: 1 hour
-! TimeUpdated: 2023-04-16T14:53:41+00:00
+! TimeUpdated: 2025-02-10T09:14:11+00:00
 ! Homepage: https://github.com/Luzifer/browser-privacy
 ! License: https://unlicense.org/
 
@@ -387,6 +387,34 @@
 @@||s.ytimg.com^$script,domain=www.youtube.com
 @@||www.gstatic.com^$script,domain=consent.youtube.com
 @@||youtube-ui.l.google.com^$script,domain=www.youtube.com
+
+! APP: Zoho Workplace - https://*.zoho.com/
+@@||js.zohocdn.com/calendar/$script,domain=zoho.com
+@@||js.zohocdn.com/ichat/$script,domain=zoho.com
+@@||static.zohocdn.com/calendar/components/$script,domain=zoho.com
+@@||static.zohocdn.com/chat/$script,domain=zoho.com
+@@||static.zohocdn.com/chat/$script,domain=zoho.com
+@@||static.zohocdn.com/iam/$script,domain=zoho.com
+@@||static.zohocdn.com/zeditor/$script,domain=zoho.com
+@@||static.zohocdn.com/zmhm/$script,domain=zoho.com
+@@||static.zohocdn.com/zohosecurity/$script,domain=zoho.com
+
+@@||static.zohocdn.com/bluepencil/$script,domain=cliq.zoho.com
+@@||static.zohocdn.com/murphysdk/$script,domain=cliq.zoho.com
+@@||static.zohocdn.com/personal/$script,domain=cliq.zoho.com
+@@||static.zohocdn.com/rtcplatform/$script,domain=cliq.zoho.com
+@@||static.zohocdn.com/rtelibrary/$script,domain=cliq.zoho.com
+@@||static.zohocdn.com/whiteboard/$script,domain=cliq.zoho.com
+
+@@||static.zohocdn.com/helpcenter/$script,domain=help.zoho.com
+
+@@||static.zohocdn.com/zmac/$script,domain=mail.zoho.com
+@@||static.zohocdn.com/zmail/$script,domain=mail.zoho.com
+
+@@||static.zohocdn.com/zp5/$script,domain=people.zoho.com
+
+@@||accounts.zoho.eu^$script,domain=www.zoho.com
+@@||www.zohowebstatic.com/sites/zweb/$script,domain=www.zoho.com
 
 ! ---- Fully trash the bad stuff ----
 ! Site: Replug.io - Monetize foreign websites by putting them into an iFrame
